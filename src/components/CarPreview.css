@@ -1,0 +1,158 @@
+#mainImage{
+    height: 350px;
+    transition: 0.2s ease-in-out;
+}
+#mainImage:hover{
+    transform: scale(1.03);
+}
+
+#logo-img{
+   display: none;
+   width: 50px;
+}
+.car-box{
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 13rem;
+    height: 550px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+}
+.image-container{
+    height: 350px;
+    width: 600px;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    height: 150px;
+}
+.text-container h1{
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+.text-container h4{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.text-container p{
+    font-size: 1rem;
+    opacity: 0.9;
+}
+.price-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand-container{
+   
+    position: relative;
+    top: 60px;
+    left: 100px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+.brand-logo{
+    display: flex;
+}
+.brand-logo i{
+    margin: 0 5px;
+    opacity: 0.7;
+    font-size: small;
+} 
+.rating{
+    font-size: small;
+    color: gold;
+    opacity:0.6 ;
+}
+.rent-btn{
+    padding: 10px 30px;
+    margin-right: 3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: none;
+    color: white;
+    background: linear-gradient(to right top, #fe6e32, #fe6935, #fe6438, #fe5f3b, #fe5a3e);
+    box-shadow: 1px 5px 10px 2px rgba(254, 110, 50 ,0.3) ;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.7rem;
+    margin-bottom: 0.9rem;
+    position: relative;
+    left: 1.7rem;
+    transition: 0.2s linear;
+}
+.rent-btn:hover{
+    transform: translateY(3px);
+
+}
+.price-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sub-price-box{
+    display: flex;
+}
+
+
+@media screen and (max-width:960px) {
+    #mainImage{
+       height: 280px;
+    }
+    .car-box{
+        margin: 0 8rem;
+    }
+    
+}
+@media screen and (max-width:720px){
+    #mainImage{
+        height: 220px;
+    }
+    .car-box{
+        margin: 0 5rem;
+    }
+    .text-container h1{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    .text-container h4{
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    .text-container p{
+        font-size: 1rem;
+        opacity: 0.7;
+    }
+}
+@media screen and (max-width:520px) {
+    #mainImage{
+        height: 180px;
+    }
+    .car-box{
+        margin: 0 2rem;
+    }
+    .text-container h1{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .text-container h4{
+        font-size: 0.5rem;
+        font-weight: 400;
+    }
+    .text-container p{
+        font-size: 0.4rem;
+        opacity: 0.7;
+    }
+}

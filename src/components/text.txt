@@ -1,0 +1,13 @@
+orange gradient
+background-image: linear-gradient(to right top, #fe6e32, #fe6935, #fe6438, #fe5f3b, #fe5a3e);
+
+car1:toyota 86 coupe
+car2: mercedes benz cla 240d
+audi r8 2018
+nissan Qashqai
+
+chevrolet camaro
+lamborgini huracane
+Ferrari 612 Scaglietti 
+ Porsche Panamera
+ ford mustang

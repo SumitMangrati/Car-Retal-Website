@@ -1,0 +1,120 @@
+/* (244 113 57) */
+:root{
+    --primary-color:rgb(251, 134, 83);
+}
+.navbar{
+    font-family: 'Poppins';
+    height: 65px;
+    padding: 10px 0;
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.1);
+    z-index: 999;
+    position: sticky;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 4rem;
+}
+.menu-icon{
+    display: none;
+}
+.container ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container ul li{
+
+     list-style: none;
+    padding: 0.9rem;
+}
+.container ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: block;
+    transition: 0.3s ease;
+}
+.container ul li a:hover{
+    color: var(--primary-color);
+   transform: scale(1.1) translateY(4px);
+}
+.navbar-button{
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem;
+    transition: 0.2s ease-out;
+}
+.navbar-button:hover{
+    transform: scale(1.1);
+}
+.navbar-button i{
+    transform: scale(1.5);
+}
+.navbar-button span{
+    font-weight: 500;
+    margin: 7px;
+}
+.button-mobile span{
+    display: none;
+}
+
+@media  screen and (max-width:960px) {
+    .container ul{
+        background: white;
+        z-index: 999;
+    }
+    .menu-icon{
+        display: block;
+        position: absolute;
+        right: 4rem;
+        transform: scale(1.6);
+    }
+    .nav-link{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        min-height: 90vh;
+        position: absolute;
+        top: 83px;
+        left: -100%;  
+        transition: 0.25s linear;
+    }
+    .nav-link.active{
+        left: 0;
+    }
+    .container ul li{
+        text-align: center;
+        width: 100%;
+        display: table;
+        padding: 1.2rem;
+    }
+    .navbar-button{
+        display: none;
+    }
+    .button-mobile{
+        display: block;
+        width: 20%;
+        border-radius:50px;
+        margin: 2rem auto;
+        margin-top: 1rem;
+        padding: 12px 10px;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: black;
+    }
+    .button-mobile span{
+        display: block;
+        color: white;
+    }
+    
+    
+}
